@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BootStrap Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand ms-5" href="#"><span>Rep</span>air</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-around navbar-collapse ms-5 text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Protfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success btn-sec" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info ">
+          <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="m-3">
+              <label class="form-label text-info">Email address</label>
+              <input type="email" class="form-control text-info border-3 border-info rounded-2" aria-describedby="emailHelp">
+              <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+            </div>
+            <div class="m-3">
+              <label class="form-label text-info">Password</label>
+              <input type="password" class="form-control text-info border-3 border-info rounded-2">
+            </div>
+            <div class="m-3 form-check">
+              <div class="form-check form-switch">
+                <input class="form-check-input bg-info" type="checkbox" role="switch" checked="">
+                <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remmember me</label>
+              </div>
+            </div> <!-- /form check -->
+
+          </form>
+          <div class="modal-footer d-flex  justify-content-between">
+            <button type="button" class="btn btn-info text-light">Login</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/home-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Your Dream House</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, minima?</p>
+          <a href="" class="btn btn-sec mt-3">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/home-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Always Dedicated</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, autem.</p>
+          <a href="" class="btn btn-sec mt-3">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/home-3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>True Construction</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, perspiciatis!</p>
+          <a href="" class="btn btn-sec mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- About Section-->
+  <section id="about" class="about section-padding bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img src="images/about.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-text text-white">
+            <h2>We Provide Best Quality <br> Services Ever</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam vero aspernatur accusamus corporis natus odio eum sed dicta ratione atque delectus dolorum itaque, cum dolores eos aut illo totam optio numquam deleniti at nesciunt? Sed aut laborum adipisci ut, quas obcaecati et, vel illo explicabo optio placeat ex tempora.</p>
+            <a href="#" class="btn btn-sec">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <hr style="margin: 0;height: 2px;">
+  <!-- Services Section-->
+
+  <section id="services" class="services section-padding bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2 class="text-white">Our <span>Services</span></h2>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-white text-center bg-dark pb-2">
+            <div class="card-body">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+              <h3 class="card-title">Best Quality</h3>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro distinctio quidem exercitationem, blanditiis sed hic, quis quasi fugiat veritatis magni, vitae quae commodi doloremque!</p>
+              <button class="btn btn-sec text-white">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-white text-center bg-dark pb-2">
+            <div class="card-body">
+              <i class="bi bi-house-check-fill"></i>
+              <h3 class="card-title">Sustainability</h3>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro distinctio quidem exercitationem, blanditiis sed hic, quis quasi fugiat veritatis magni, vitae quae commodi doloremque!</p>
+              <button class="btn btn-sec text-white">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-white text-center bg-dark pb-2">
+            <div class="card-body">
+              <i class="bi bi-slack"></i>
+              <h3 class="card-title">Integrity</h3>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro distinctio quidem exercitationem, blanditiis sed hic, quis quasi fugiat veritatis magni, vitae quae commodi doloremque!</p>
+              <button class="btn btn-sec text-white">Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin: 0;height: 2px;">
+  <!-- Protfolio Section-->
+
+  <section id="protfolio" class="protfolio section-padding bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2 class="text-white">Our <span>Projects</span></h2>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card mb-3 project d-flex text-white">
+          <div class="row g-0">
+            <div class="col-md-8 pro-text">
+              <div class="card-body">
+                <h3 class="pro-title">Podcast Title</h3>
+                <div class="pro-subtitle ">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time>
+                </div>
+                <div class="pro-bar"></div>
+                <div class="pro-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <ul class="pro-box">
+                  <li class="box-item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="box-item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                  <li class="box-item"><a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 pro-img">
+              <img src="images/project-1.jpg" class="img-fluid rounded-start" alt="project-1">
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 project d-flex text-white">
+          <div class="row g-0">
+            <div class="col-md-4 pro-img">
+              <img src="images/project-1.jpg" class="img-fluid rounded-start" alt="project-1">
+            </div>
+            <div class="col-md-8 pro-text">
+              <div class="card-body">
+                <h3 class="pro-title">Podcast Title</h3>
+                <div class="pro-subtitle ">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time>
+                </div>
+                <div class="pro-bar"></div>
+                <div class="pro-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <ul class="pro-box">
+                  <li class="box-item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="box-item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                  <li class="box-item"><a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 project d-flex text-white">
+          <div class="row g-0">
+            <div class="col-md-8 pro-text">
+              <div class="card-body">
+                <h3 class="pro-title">Podcast Title</h3>
+                <div class="pro-subtitle ">
+                  <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time>
+                </div>
+                <div class="pro-bar"></div>
+                <div class="pro-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <ul class="pro-box">
+                  <li class="box-item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="box-item"><i class="fas fa-clock mr-2"></i>55 mins</li>
+                  <li class="box-item"><a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 pro-img">
+              <img src="images/project-1.jpg" class="img-fluid rounded-start" alt="project-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <hr style="margin: 0;height: 2px;">
+  <!-- Team Section-->
+
+  <section id="team" class="team section-padding bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2 class="text-white">Our <span>Team</span></h2>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-team">
+
+      <div class="card_team">
+        <div class="content_team">
+            <div class="imgBx"><img src="images/team-1.jpg"></div>
+            <div class="contentBx">
+              <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1"><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li style="--i:2"><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li style="--i:3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+      </div>
+
+      <div class="card_team">
+        <div class="content_team">
+            <div class="imgBx"><img src="images/team-3.jpg"></div>
+            <div class="contentBx">
+              <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+          </div>
+            <ul class="sci">
+              <li style="--i:1"><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li style="--i:2"><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li style="--i:3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+      </div>
+
+      <div class="card_team">
+        <div class="content_team">
+            <div class="imgBx"><img src="images/team-2.jpg"></div>
+            <div class="contentBx">
+              <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+          </div>
+            <ul class="sci">
+              <li style="--i:1"><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li style="--i:2"><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li style="--i:3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+      </div>
+    </div>
+  </section>
+  
+  <hr style="margin: 0;height: 2px;">
+  <!-- Contact Section-->
+
+  <section class="contact section-padding bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2 class="text-white">Contact <span>Us</span></h2>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 contact-from">
+          <h4>Get in touch</h4>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your number">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn btn-sec">Submit</button>
+        </div>
+        <div class="col-md-5 contact-text">
+          <h4>Contact us</h4><hr>
+          <div class="mt-4">
+              <div class="d-flex">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p >Address: 198 nono 21th NnN, Suite 721 000 NoY 10016</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-telephone-fill"></i>
+                <p>Contact :- 8888888888</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-envelope-fill"></i>
+                <p>Email:- Contact@gmail.com</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-browser-chrome"></i>
+                <p>Website: www.contact.com</p>
+              </div><hr>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Why Section-->
+  <section class="why section-padding bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="text-white">Why <span>Us</span></h2>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer Section-->
+
+  <footer class="footer bg-dark">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Designs</a></li>
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit" class="btn-sec">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
